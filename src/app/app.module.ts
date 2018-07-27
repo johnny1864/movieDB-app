@@ -6,14 +6,24 @@ import { HttpModule } from '@angular/http';
 import { ClarityModule } from '@clr/angular';
 import { AppComponent } from './app.component';
 import { ROUTING } from "./app.routing";
-import { HomeComponent } from "./home/home.component";
-import { AboutComponent } from "./about/about.component";
+import { HomeComponent } from "./components/home/home.component";
+import { AboutComponent } from "./components/about/about.component";
+import { LandingComponent } from './components/landing/landing.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { SidePanelComponent } from './components/side-panel/side-panel.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         AboutComponent,
-        HomeComponent
+        HomeComponent,
+        LandingComponent,
+        LoginComponent,
+        RegisterComponent,
+        NavBarComponent,
+        SidePanelComponent
     ],
     imports: [
         BrowserAnimationsModule,
